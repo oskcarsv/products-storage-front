@@ -8,7 +8,6 @@ import { Sidebar } from "../../components/navbars/Sidebar";
 import "./mainPage.css"; // Asegúrate de tener este archivo CSS para los estilos de la página principal
 
 export const MainPage = () => {
-  // Simulando datos quemados
   const text = "¡Bienvenido a la página principal!";
   const isFetching = false; // Cambia a true si estás realizando alguna operación asincrónica
 

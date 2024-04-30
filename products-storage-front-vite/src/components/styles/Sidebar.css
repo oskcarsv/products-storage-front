@@ -1,0 +1,67 @@
+/* Estilos para el contenedor del sidebar */
+.sidebar-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título del sidebar */
+.sidebar-title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los elementos de la lista del sidebar */
+.sidebar-list-item {
+  margin-bottom: 15px;
+}
+
+/* Estilos para el nombre de usuario en el sidebar */
+.sidebar-list-username {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Estilos para el estado en el sidebar */
+.sidebar-list-status {
+  font-size: 14px;
+}
+
+/* Estilos adicionales para los programadores conectados */
+.sidebar-list-username.online,
+.sidebar-list-status.online {
+  color: green;
+}
+
+/* Estilos adicionales para los programadores desconectados */
+.sidebar-list-username.offline,
+.sidebar-list-status.offline {
+  color: red;
+}
+
+/* Estilos para las habilidades en el sidebar */
+.sidebar-skills {
+  margin-top: 5px;
+}
+
+/* Estilos para el título de habilidades en el sidebar */
+.sidebar-skills-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Estilos para la lista de habilidades en el sidebar */
+.sidebar-skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+/* Estilos para las habilidades individuales en el sidebar */
+.sidebar-skill {
+  font-size: 14px;
+  color: #666;
+}
