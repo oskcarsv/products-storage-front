@@ -3,7 +3,7 @@ import { MainPage } from "./pages/main/mainPage"
 import { AuthPage } from "./pages/auth/AuthPage";
 
 const routes = useRoutes([
-    {path: '/', element: <MainPage/>},
+    {path: '/*', element: <MainPage/>},
     {path: 'auth', element: <AuthPage/>}
 ]);
 
