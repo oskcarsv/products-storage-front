@@ -12,6 +12,19 @@
   .navbar-logo {
     font-size: 24px;
   }
+
+  .imgNav {
+    background-image: url("../../assets/img/logo.jpg");
+    min-height: 100px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
   
   /* Estilos para los enlaces */
   .navbar-links {

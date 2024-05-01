@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/Sidebar.css"; // Importa el archivo CSS para los estilos del componente
+import "../styles/Sidebar.css"; // Import the CSS file for component styling
 
 export const Sidebar = () => {
-    // Datos quemados de programadores
+    // Dummy data for programmers
     const allProgrammers = [
         {
             id: 1,
@@ -22,12 +22,12 @@ export const Sidebar = () => {
             isOnline: true,
             skills: ["Node.js", "Express", "MongoDB"]
         },
-        // Agrega más programadores aquí...
+        // Add more programmers here...
     ];
 
     return (
         <div className="sidebar-container">
-            <h2 className="sidebar-title">Programadores</h2>
+            <h2 className="sidebar-title">Programmers</h2>
             <div className="sidebar-content">
                 {allProgrammers.map((programmer) => {
                     return (
@@ -36,10 +36,10 @@ export const Sidebar = () => {
                                 {programmer.username}
                             </span>
                             <span className={`sidebar-list-status ${programmer.isOnline ? 'online' : 'offline'}`}>
-                                {programmer.isOnline ? 'En línea' : 'Desconectado'}
+                                {programmer.isOnline ? 'Online' : 'Offline'}
                             </span>
                             <div className="sidebar-skills">
-                                <span className="sidebar-skills-title">Habilidades:</span>
+                                <span className="sidebar-skills-title">Skills:</span>
                                 <ul className="sidebar-skills-list">
                                     {programmer.skills.map((skill, index) => (
                                         <li key={index} className="sidebar-skill">{skill}</li>
@@ -53,4 +53,3 @@ export const Sidebar = () => {
         </div>
     );
 };
-

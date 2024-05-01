@@ -24,6 +24,9 @@ export const MainPage = () => {
           <div className="text-container">
             <h1>{text}</h1>
           </div>
+          <div>
+            <h1>nose</h1>
+          </div>
         </Content>
       </div>
     </div>

@@ -1,71 +1,88 @@
+/* Estilos para el contenedor del contenido con fondo blanco */
+.white-background {
+  background-color: #ffffff;
+}
+
 /* Estilos para el contenedor del contenido */
 .content-container {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilos para el título */
-  .content-container h1 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos para los subtítulos */
-  .content-container h2 {
-    font-size: 24px;
-    color: #555;
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
-  
-  /* Estilos para el texto */
-  .content-container p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
-  }
-  
-  /* Estilos para la lista */
-  .content-container ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  /* Estilos para los ítems de la lista */
-  .content-container li {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
-  }
-  
-  /* Estilos para los enlaces */
-  .content-container a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  /* Estilos para la imagen */
-  .content-image {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 5px;
-  }
-  
-  /* Estilos para los elementos al pasar el ratón sobre ellos */
-  .content-container a:hover,
-  .content-container li:hover {
-    color: #0056b3;
-  }
-  
-  /* Estilos para el pie de página */
-  .footer {
-    margin-top: 50px;
-    text-align: center;
-    color: #777;
-  }
-  
+  background-color: #ffffff;
+  padding: 20px;
+  border: none; /* Quitamos los bordes */
+}
+
+.content-container3 {
+  background-color: #ffffff;
+  padding: 20px;
+  border: none; /* Quitamos los bordes */
+}
+
+
+/* Estilos para el título */
+.content-container h1 {
+  font-size: 36px;
+  color: #000; /* Color blanco para el texto */
+  margin-bottom: 20px;
+  text-align: left; /* Texto alineado a la izquierda */
+  font-family: 'Arial', sans-serif; /* Cambiamos la fuente */
+}
+
+/* Estilos para los subtítulos */
+.content-container h2 {
+  font-size: 28px;
+  color: #000; /* Color blanco para el texto */
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Cambiamos la fuente */
+}
+
+/* Estilos para el texto */
+.content-container p {
+  font-size: 18px;
+  color: #000; /* Color blanco para el texto */
+  line-height: 1.6;
+  text-align: justify;
+  font-family: 'Arial', sans-serif; /* Cambiamos la fuente */
+}
+
+/* Estilos para la lista */
+.content-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los ítems de la lista */
+.content-container li {
+  font-size: 18px;
+  color: #000; /* Color blanco para el texto */
+  line-height: 1.6;
+}
+
+/* Estilos para los enlaces */
+.content-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Estilos para la imagen */
+.content-image {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+/* Estilos para los elementos al pasar el ratón sobre ellos */
+.content-container a:hover,
+.content-container li:hover {
+  color: #0056b3;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #777;
+}

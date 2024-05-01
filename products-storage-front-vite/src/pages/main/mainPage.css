@@ -16,11 +16,13 @@
     margin: 0;
   }
   
-  /* Estilos para el contenido principal */
   .main-content {
     display: flex;
     flex: 1;
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    width: 100%; /* Ocupa toda la anchura */
   }
+  
   
   /* Estilos para la barra lateral */
   .sidebar-container {
@@ -36,8 +38,9 @@
   
   /* Estilos para el contenido principal */
   .content-container {
-    flex: 1;
-    padding: 20px;
+    
+    /* flex: 1;
+    padding: 20px; */
   }
   
   /* Estilos para el texto dentro del contenido */

@@ -1,67 +1,65 @@
 /* Estilos para el contenedor del sidebar */
 .sidebar-container {
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para el título del sidebar */
+/* Estilos para el título */
 .sidebar-title {
-  font-size: 20px;
+  font-size: 24px;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-/* Estilos para los elementos de la lista del sidebar */
-.sidebar-list-item {
-  margin-bottom: 15px;
+/* Estilos para el contenido del sidebar */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Estilos para el nombre de usuario en el sidebar */
+/* Estilos para los nombres de usuario */
 .sidebar-list-username {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
-/* Estilos para el estado en el sidebar */
+/* Estilos para el estado de conexión */
 .sidebar-list-status {
-  font-size: 14px;
+  font-size: 16px;
+  color: #777;
 }
 
-/* Estilos adicionales para los programadores conectados */
+/* Estilos para los programadores en línea */
 .sidebar-list-username.online,
 .sidebar-list-status.online {
   color: green;
 }
 
-/* Estilos adicionales para los programadores desconectados */
+/* Estilos para los programadores desconectados */
 .sidebar-list-username.offline,
 .sidebar-list-status.offline {
   color: red;
 }
 
-/* Estilos para las habilidades en el sidebar */
+/* Estilos para las habilidades */
 .sidebar-skills {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
-/* Estilos para el título de habilidades en el sidebar */
 .sidebar-skills-title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  color: #555;
 }
 
-/* Estilos para la lista de habilidades en el sidebar */
 .sidebar-skills-list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
-  margin-top: 5px;
 }
 
-/* Estilos para las habilidades individuales en el sidebar */
 .sidebar-skill {
   font-size: 14px;
-  color: #666;
+  color: #555;
+  margin-left: 20px;
 }
