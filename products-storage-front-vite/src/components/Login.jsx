@@ -68,7 +68,7 @@ export const Login = ({ switchAuthHandler }) => {
         <form className="auth-form">
         <Input
           field="email"
-          label="Email"
+          label="Email or User"
           value={formState.email.value}
           onChangeHandler={handleInputValueChange}
           type="text"
@@ -91,7 +91,7 @@ export const Login = ({ switchAuthHandler }) => {
             </button>
         </form>
         <span onClick={switchAuthHandler} className="auth-form-switch-label">
-            ¿Aún no tienes una cuenta? ¡Registrate...!
+            Do not you have an account yet? Sign up...!
         </span>
     </div>
   );

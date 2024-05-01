@@ -87,7 +87,7 @@ export const PasswordSettings = () => {
             />
         ))}
         <button onClick={handleFormSubmit} disabled={isSubmitButtonDisabled}>
-            Actualizar contraseña
+            Update password
         </button>
     </form>
   )
