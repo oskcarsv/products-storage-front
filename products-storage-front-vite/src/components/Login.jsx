@@ -74,7 +74,7 @@ export const Login = ({ switchAuthHandler }) => {
           type="text"
           onBlurHandler={handleInputValidationOnBlur}
           showErrorMessage={formState.usernameOrEmail.showError}
-          validationMessage={validateUsernameOrEmail}
+          validationMessage={validateUsernameOrEmailMessage}
         />
         <Input
           field="password"
