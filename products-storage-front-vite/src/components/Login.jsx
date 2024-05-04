@@ -2,10 +2,10 @@
 import { useState } from "react";
 import { Input } from "./Input";
 import {
-  emailValidationMessage,
   validatePasswordMessage,
-  validateEmail,
   validatePassword,
+  validateUsernameOrEmail,
+  validateUsernameOrEmailMessage
 } from "../shared/validators";
 import { useLogin } from "../shared/hooks";
 
@@ -13,7 +13,7 @@ export const Login = ({ switchAuthHandler }) => {
   const {login, isLoading} = useLogin();
 
   const [formState, setFormState] = useState({
-    email: {
+    usernameOrEmail: {
       value: "",
       isValid: false,
       showError: false,
@@ -38,8 +38,8 @@ export const Login = ({ switchAuthHandler }) => {
   const handleInputValidationOnBlur = (value, field) => {
     let isValid = false;
     switch (field) {
-      case "email":
-        isValid = validateEmail(value);
+      case "usernameOrEmail":
+        isValid = validateUsernameOrEmail(value)
         break;
       case "password":
         isValid = validatePassword(value);
@@ -59,22 +59,22 @@ export const Login = ({ switchAuthHandler }) => {
 
   const handleLogin = (event) => {
     event.preventDefault()
-    login(formState.email.value, formState.password.value)
+    login(formState.usernameOrEmail.value, formState.password.value)
   }
 
-  const isSubmitButtonDisabled = isLoading || !formState.password.isValid || !formState.email.isValid
+  const isSubmitButtonDisabled = isLoading || !formState.password.isValid || !formState.usernameOrEmail.isValid
   return (
     <div className="login-container">
         <form className="auth-form">
         <Input
-          field="email"
+          field="usernameOrEmail"
           label="Email or User"
-          value={formState.email.value}
+          value={formState.usernameOrEmail.value}
           onChangeHandler={handleInputValueChange}
           type="text"
           onBlurHandler={handleInputValidationOnBlur}
-          showErrorMessage={formState.email.showError}
-          validationMessage={emailValidationMessage}
+          showErrorMessage={formState.usernameOrEmail.showError}
+          validationMessage={validateUsernameOrEmail}
         />
         <Input
           field="password"
