@@ -34,7 +34,7 @@ export const Register = ({ switchAuthHandler }) => {
       isValid: false,
       showError: false,
     },
-    passwordConfir: {
+    passwordConfirm: {
       value: "",
       isValid: false,
       showError: false,
@@ -61,14 +61,14 @@ export const Register = ({ switchAuthHandler }) => {
     switch (field) {
       case "name":
         isValid = validateName(value);
-        breck;
+        break;
       case "email":
         isValid = validateEmail(value);
         break;
       case "password":
         isValid = validatePassword(value);
         break;
-      case "passwordConfir":
+      case "passwordConfirm":
         isValid = validateConfirPassword(formState.password.value, value);
         break;
       case "username":
@@ -89,13 +89,13 @@ export const Register = ({ switchAuthHandler }) => {
 
   const handleRegister = (event) => {
     event.preventDefault();
-    register(formState.email.value, formState.password.value, formState.username.value);
+    register(formState.name.value ,formState.email.value, formState.password.value, formState.username.value);
   };
 
   const isSubmitButtonDisabled = isLoading ||
     !formState.password.isValid ||
     !formState.email.isValid ||
-    !formState.passwordConfir.isValid ||
+    !formState.passwordConfirm.isValid ||
     !formState.username.isValid;
   return (
     <div className="register-container">
@@ -107,7 +107,7 @@ export const Register = ({ switchAuthHandler }) => {
           onChangeHandler={handleInputValueChange}
           type="text"
           onBlurHandler={handleInputValidationOnBlur}
-          showErrorMessage={formState.username.showError}
+          showErrorMessage={formState.name.showError}
           validationMessage={validateNameMessage}
         />
         <Input
@@ -141,13 +141,13 @@ export const Register = ({ switchAuthHandler }) => {
           validationMessage={validatePasswordMessage}
         />
         <Input
-          field="passwordConfir"
+          field="passwordConfirm"
           label="Passowrd Confirmation"
-          value={formState.passwordConfir.value}
+          value={formState.passwordConfirm.value}
           onChangeHandler={handleInputValueChange}
           type="password"
           onBlurHandler={handleInputValidationOnBlur}
-          showErrorMessage={formState.passwordConfir.showError}
+          showErrorMessage={formState.passwordConfirm.showError}
           validationMessage={passwordConfirmationMessage}
         />
         <button onClick={handleRegister} disabled={isSubmitButtonDisabled}>
