@@ -8,11 +8,11 @@ export const useLogin = () => {
 
     const navigate = useNavigate()
 
-    const login = async(email, password) =>{
+    const login = async(usernameOrEmail, password) =>{
         setIsLoading(true)
 
         const response = await loginRequest({
-            email,
+            usernameOrEmail,
             password
         })
         console.log(response)
@@ -20,7 +20,7 @@ export const useLogin = () => {
 
         if(response.error){
             console.log(response.error)
-            return toast.error(response.e?.response?.data || 'Ocurrió un error al iniciar sesión, intenta de nuevo')
+            return toast.error(response.e?.response?.data || 'An error ocurred while logging in, please try again')
         }
 
         const { userDetails } = response.data

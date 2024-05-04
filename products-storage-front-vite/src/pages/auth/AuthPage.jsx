@@ -1,6 +1,7 @@
 import { useState } from "react"
+
 import { Login } from "../../components/Login"
-import { Register } from "../../components/Register"
+//import { Register } from "../../components/Register"
 
 import './authPage.css'
 
@@ -16,8 +17,7 @@ export const AuthPage = () => {
       {isLogin ? (
         <Login switchAuthHandler={handleAuthPageToggle} />
       ) : (
-        <Register  switchAuthHandler={handleAuthPageToggle} />
-
+        <Register switchAuthHandler={handleAuthPageToggle}/>
       )}
     </div>
   )
