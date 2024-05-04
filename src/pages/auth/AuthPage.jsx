@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import { Login } from "../../components/Login"
-//import { Register } from "../../components/Register"
+import { Register } from "../../components/Register"
 
 import './authPage.css'
 
