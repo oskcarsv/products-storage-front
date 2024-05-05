@@ -69,3 +69,14 @@ export const listTaskByUser = async () => {
         }
     }
 }
+
+export const createTask = async () => {
+    try{
+        return await apiClient.post('/task/')
+    }catch(e){
+        return{
+            error: true,
+            e
+        }
+    }
+}
