@@ -17,7 +17,7 @@ export const Navbar = () => {
       </div>
       <ul className="navbar-links">
         {
-         saved == null? (<li><a href="/auth">Loguear aqui</a></li>):(<li><a href="#" onClick={handleLogout}>Salir</a></li>)
+         saved == null? (<li><a href="/auth">Login</a></li>):(<li><a href="#" onClick={handleLogout}>Logout</a></li>)
 
         }
         {/* <li><a href="/auth">Loguear aqui</a></li>
