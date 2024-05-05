@@ -1,8 +1,7 @@
 import React from "react";
-import "../styles/Sidebar.css"; // Import the CSS file for component styling
+import "../styles/Sidebar.css";
 
 export const Sidebar = () => {
-    // Dummy data for programmers
     const allProgrammers = [
         {
             id: 1,
@@ -22,7 +21,6 @@ export const Sidebar = () => {
             isOnline: true,
             skills: ["Node.js", "Express", "MongoDB"]
         },
-        // Add more programmers here...
     ];
 
     return (

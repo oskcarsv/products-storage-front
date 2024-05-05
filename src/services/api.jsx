@@ -12,12 +12,11 @@ apiClient.interceptors.request.use(
 
         const userDetails = localStorage.getItem('user')
     
-        //if(userDetails != null && userDetails !== undefined){
         if (userDetails){
             const token = JSON.parse(userDetails).token
             config.headers.Authorization = `Bearer ${token}`
         }
-        //}
+        
         return config;
 
     },
