@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Navigate } from "react-router-dom/dist";
-import {listTask as listTaskRequest } from './services';
+import {listTask as listTaskRequest, listTaskByUser} from './services';
 import toast from "react-hot-toast";
 
 export const useListTask = () => {
@@ -20,9 +20,29 @@ export const useListTask = () => {
             })
         }
 
+        const listTaskByUserData = await listTaskByUser();
+
+        if(listTaskByUserData.error){
+
+            return toast.error(
+                listTaskByUserData.e?.response?.data || 'An error occurred while reading the tasks'
+            )
+
+        }
+
         setTask({
-            task: listTaskData.data.task
+            task: listTaskData.data.task,
+            taskByUser: listTask.data.task.filter(task =>
+
+                listTaskByUserData.data.taskByUser.includes(task.id)
+
+            )
         })
     } 
-    return {listTask, isFetching: !Boolean(task), allTask: task?.task}
+    return {
+        listTask, 
+        isFetching: !Boolean(task), 
+        allTask: task?.task,
+        taskByUser: task?.taskByUser
+    }
 }

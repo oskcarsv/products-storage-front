@@ -48,9 +48,20 @@ export const register = async (data) => {
     }
 }
 
-export const listTasks = async () => {
+export const listTask = async () => {
     try{
-        return await apiClient.get('/tasks/')
+        return await apiClient.get('/task/')
+    }catch(e){
+        return{
+            error: true,
+            e
+        }
+    }
+}
+
+export const listTaskByUser = async () => {
+    try{
+        return await apiClient.get('/task/listTaskByUser')
     }catch(e){
         return{
             error: true,
