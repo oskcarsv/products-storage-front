@@ -80,3 +80,14 @@ export const createTask = async () => {
         }
     }
 }
+
+export const deleteTask = async () => {
+    try{
+        return await apiClient.delete('/task/')
+    }catch(e){
+        return{
+            error: true,
+            e
+        }
+    }
+}
