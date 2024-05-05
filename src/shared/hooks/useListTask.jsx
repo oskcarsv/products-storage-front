@@ -1,4 +1,6 @@
+/* eslint-disable no-extra-boolean-cast */
 import { useState } from "react";
+// eslint-disable-next-line no-unused-vars
 import { Navigate } from "react-router-dom/dist";
 import {listTask as listTaskRequest, listTaskByUser} from './services';
 import toast from "react-hot-toast";
