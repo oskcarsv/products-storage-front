@@ -6,7 +6,9 @@ import "./task.css";
 export const TaskPage = () => {
   return (
     <div className="task-container">
-      <h1>Task Page</h1>
+      <div className="">
+
+      </div>
     </div>
   );
 };
