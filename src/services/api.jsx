@@ -69,3 +69,25 @@ export const listTaskByUser = async () => {
         }
     }
 }
+
+export const createTask = async () => {
+    try{
+        return await apiClient.post('/task/')
+    }catch(e){
+        return{
+            error: true,
+            e
+        }
+    }
+}
+
+export const deleteTask = async () => {
+    try{
+        return await apiClient.delete('/task/')
+    }catch(e){
+        return{
+            error: true,
+            e
+        }
+    }
+}
