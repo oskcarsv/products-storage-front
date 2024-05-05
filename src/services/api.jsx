@@ -50,7 +50,7 @@ export const register = async (data) => {
 
 export const listTasks = async () => {
     try{
-        return await apiClient.get('/tasks')
+        return await apiClient.get('/tasks/')
     }catch(e){
         return{
             error: true,
