@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React from "react";
 import { useState } from "react";
 
 const TaskWelcome = () => {
   const username = localStorage.getItem("username");
+  console.log("Username from localStorage:", username);
 
   return (
     <div className="task-photo-profile">
