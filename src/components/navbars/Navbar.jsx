@@ -3,13 +3,6 @@ import React from "react";
 import "../styles/Navbar.css";
 
 export const Navbar = () => {
-  var saved = localStorage.getItem("user");
-
-  const handleLogout = () => {
-    localStorage.removeItem('user');
-    saved = null;
-    window.location.href = './'
-  }
 
   return (
     <nav className="navbar">
