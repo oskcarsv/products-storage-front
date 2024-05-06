@@ -1,49 +1,46 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
-import '../styles/Content.css'
+import "../styles/Content.css";
+
+import todoIcon from "../../assets/taskImg/todo-icon.png";
+import welcomeImg from "../../assets/taskImg/welcome.gif";
 
 export const Content = () => {
   return (
-    <div>
-      <div className="content-container">
-        <h1>Welcome to our storage service!</h1>
-        <p>
-          Discover how our storage service can meet your needs. Here you will find information about our services and how we can assist you.
-        </p>
+    <div className="main-content">
+      <header className="m-header">
+        <img
+          src={todoIcon}
+          alt="todo icon"
+          className="logo"
+          height="100px"
+          width="100px"
+        />
+        <h1 className="logo-h1">Products Storage</h1>
+      </header>
 
-        <h2>Our Storage Services</h2>
-        <p>
-          We offer a wide range of storage services to meet the needs of businesses and individuals. Our services include:
-        </p>
-        <ul>
-          <li>Short-term and long-term storage</li>
-          <li>Storage of perishable and climate-sensitive goods</li>
-          <li>Document and file storage</li>
-          <li>Packaging and wrapping services</li>
-          <li>Secure storage of valuable items</li>
-        </ul>
+      <section className="s-welcome">
+        <div className="welcome-text">
+          <h1>Welcome to Products Storage</h1>
+          <p className="p-welcome">
+            Products Storage is a simple contact management system that allows
+            you to manage your contacts with ease. You can add, edit, delete and
+            view your contacts.
+          </p>
 
-        <h2>Contact Us</h2>
-        <p>
-          If you would like more information about our services or have an inquiry, please feel free to contact us.
-        </p>
-        <p>
-          Phone: (123) 456-7890<br />
-          Email: info@storagecompany.com<br />
-          Address: Main Street #123, City, Country
-        </p>
-      </div>
-      
-      {/* Div adicional 1 con fondo azul */}
-      <div className="white-background2">
-        <h2>Additional Content 1</h2>
-        <p>This is some additional content. You can add more information, images, or anything else you'd like.</p>
-      </div>
-
-      {/* Div adicional 2 con fondo blanco */}
-      <div className="content-container3">
-        <h2>Additional Content 2</h2>
-        <p>This is another piece of additional content. Feel free to customize it as needed.</p>
-      </div>
+          <div className="login">
+            <button>start </button>
+          </div>
+        </div>
+        <div className="welcome-img">
+          <img
+            src={welcomeImg}
+            alt="welcome"
+            height="400px"
+            width="600px"
+          />
+        </div>
+      </section>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import { Content } from "../../components/dashboard/Content";
 import "./mainPage.css";
 
 export const MainPage = () => {
-  const text = "¡Bienvenido a la página principal!";
+  const text = "Welcome to main page";
 
   return (
     <div className="main-container">
