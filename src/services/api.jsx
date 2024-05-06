@@ -48,9 +48,42 @@ export const register = async (data) => {
     }
 }
 
-export const listTasks = async () => {
+export const listTask = async () => {
     try{
-        return await apiClient.get('/tasks')
+        return await apiClient.get('/task/')
+    }catch(e){
+        return{
+            error: true,
+            e
+        }
+    }
+}
+
+export const listTaskByUser = async () => {
+    try{
+        return await apiClient.get('/task/listTaskByUser')
+    }catch(e){
+        return{
+            error: true,
+            e
+        }
+    }
+}
+
+export const createTask = async () => {
+    try{
+        return await apiClient.post('/task/')
+    }catch(e){
+        return{
+            error: true,
+            e
+        }
+    }
+}
+
+export const deleteTask = async () => {
+    try{
+        return await apiClient.delete('/task/')
     }catch(e){
         return{
             error: true,
