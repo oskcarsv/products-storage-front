@@ -4,6 +4,7 @@ import "../styles/Content.css";
 
 import todoIcon from "../../assets/taskImg/todo-icon.png";
 import welcomeImg from "../../assets/taskImg/welcome.gif";
+import todoImg from "../../assets/taskImg/todo.gif";
 
 export const Content = () => {
   return (
@@ -41,6 +42,20 @@ export const Content = () => {
           />
         </div>
       </section>
+
+      <section className="s-todo-list">
+            <div className="container-todo">
+                <div className="todo-img">
+                    <img src={todoImg} alt="welcome" height="600px" width="700px" />
+                </div>
+                <div className="todo-text">
+                    <h1>Todo list</h1>
+                    <p className="p-todo">
+                      A to-do list on a webpage is a feature that allows users to create and manage a list of tasks. It typically consists of a text field where users can enter the task name, a checkbox to mark the task as completed.
+                      </p>
+                </div>    
+            </div>
+        </section>
     </div>
   );
 };
