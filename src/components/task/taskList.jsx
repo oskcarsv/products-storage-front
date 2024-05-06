@@ -7,7 +7,7 @@ const TaskList = ({ children }) => {
   return (
     <div className="task-list">
       <h1 className="task-title-list">Tasks</h1>
-      { children }
+      <ul>{children}</ul>
     </div>
   );
 };

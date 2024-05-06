@@ -1,11 +1,15 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useState } from "react";
+import "./taskProgress.css";
 
-const TaskProgress = () => {
+const TaskProgress = ({ total, completed }) => {
   return (
     <div className="task-progress">
-      <h1 className="task-title-progress">Progress</h1>
+      <h1 className="TodoCounter">
+        Has completado <span>{completed}</span> de <span>{total}</span> TODOs
+      </h1>
     </div>
   );
 };
