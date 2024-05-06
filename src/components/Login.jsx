@@ -75,13 +75,13 @@ export const Login = ({ switchAuthHandler }) => {
         <h2>¡Welcome!</h2>
         <form>
           <div className="input-container">
-            <input type="email" id="email" name="email" placeholder="Email" required />
+            <Input label='Email or User' field="usernameOrEmail" value={formState.usernameOrEmail.value} onChangeHandler={handleInputValueChange} type='text' onBlurHandler={handleInputValidationOnBlur} showErrorMessage={formState.usernameOrEmail.showError} validationMessage={validateUsernameOrEmailMessage} />
           </div>
           <div className="input-container">
-            <input type="password" id="password" name="password" placeholder="Password" required />
+            <Input label='password' field="password" value={formState.password.value} onChangeHandler={handleInputValueChange} type='password' onBlurHandler={handleInputValidationOnBlur} showErrorMessage={formState.password.showError} validationMessage={validatePasswordMessage}/>
           </div>
         </form>
-        <button type="submit">Sign in</button>
+        <button onClick={handleLogin} disabled={isSubmitButtonDisabled}>Sign in</button>
         <span onClick={switchAuthHandler} className="auth-form-switch-label">
           Do not you have an account yet? Sign up...!
         </span>
