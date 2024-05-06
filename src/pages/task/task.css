@@ -1,3 +1,31 @@
+.task-container {
+    margin: 0;
+}
+
 .task-navbar {
+    margin: 0;
     display: flex;
+    align-items: center;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.task-list {
+    width: 300px;
+    height: 600px;
+    
+}
+
+.task-view {
+    width: 300px;
+    height: 600px;
+}
+
+.task-add-content {
+    display: flex;
+    align-items: center;
 }
