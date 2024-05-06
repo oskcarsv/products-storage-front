@@ -11,7 +11,7 @@ const TaskPhotoProfile = () => {
         alt="Photo Profile"
         className="photo-profile"
         style={{ width: "100px", height: "100px", 
-                 margin: "10px"
+                 margin: "15px"
         }}
       />{" "}
     </div>

@@ -8,6 +8,8 @@ import { TaskItem } from "../../components/task/taskItem";
 import { TaskAdd } from "../../components/task/taskAdd";
 import { TaskProgress } from "../../components/task/taskProgress";
 
+import { Link } from "react-router-dom";
+
 import "./task.css";
 
 export const TaskPage = () => {
@@ -15,8 +17,14 @@ export const TaskPage = () => {
     <div className="task-container">
       {/* Head */}
       <nav className="task-navbar">
-        <TaskPhotoProfile />
-        <TaskWelcome />
+        <div className="photo">
+          <TaskPhotoProfile />
+          <TaskWelcome />
+        </div>
+
+        <div className="login">
+          <Link to="/">Exit</Link>
+        </div>
       </nav>
 
       {/* Body */}

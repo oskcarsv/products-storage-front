@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { Navbar } from "../../components/navbars/Navbar";
 import { Content } from "../../components/dashboard/Content";
 
 
@@ -11,7 +10,6 @@ export const MainPage = () => {
 
   return (
     <div className="main-container">
-      <Navbar />
       <div className="main-content">
         <Content>
           <div className="text-container">
