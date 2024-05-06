@@ -1,6 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import { useState } from "react";
 
+import { TaskPhotoProfile } from "../../components/task/taskPhotoProfile";
+import { TaskWelcome } from "../../components/task/taskWelcome";
+
 import "./task.css";
 
 export const TaskPage = () => {
@@ -9,7 +12,8 @@ export const TaskPage = () => {
     <div className="task-container">
       {/* Head */}
       <nav className="task-navbar">
-          <h1>Task</h1>  
+          <TaskPhotoProfile />
+          <TaskWelcome />
       </nav>  
 
       {/* Body */}
