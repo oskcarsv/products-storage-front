@@ -57,7 +57,7 @@ export const TodoUpdate = ({ todo, handleUpdateTodo }) => {
         name="updateDescription"
         value={updateDescription}
         onChange={onInputChange}
-        placeholder="¿Qué hay que hacer?"
+        placeholder="What it to do?"
         readOnly={disabled}
         ref={focusInputRef}
       />

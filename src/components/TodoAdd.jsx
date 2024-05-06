@@ -45,7 +45,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 							name="description"
 							value={description}
 							onChange={onInputChange}
-							placeholder="¿Qué hay que hacer?"
+							placeholder="What it to do?"
 						/>
 					</li>
 					<li>
@@ -56,7 +56,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 							name="name"
 							value={name}
 							onChange={onInputChange}
-							placeholder="Nombre"
+							placeholder="Name"
 						/>
 					</li>
 					<li>
@@ -67,7 +67,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 							name="startDate"
 							value={startDate}
 							onChange={onInputChange}
-							placeholder="Fecha de inicio"
+							placeholder="Start date
 						/>
 
 						<input
@@ -76,7 +76,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 							name="finishDate"
 							value={finishDate}
 							onChange={onInputChange}
-							placeholder="Fecha de cierre"
+							placeholder="End date"
 						/>
 
 					</li>
@@ -89,7 +89,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 							name="descri"
 							value={descri}
 							onChange={onInputChange}
-							placeholder="Describe tu tarea"
+							placeholder="Describe your task"
 						/>
 					</li>
 
