@@ -1,0 +1,112 @@
+/* Estilos para el contenedor del formulario */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Transición de color de fondo */
+  animation: fadeInUp 1s ease; 
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para el formulario */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container:focus-within .input-label,
+.input-container input:not(:placeholder-shown) + .input-label {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Estilos para los inputs */
+.auth-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #eeeeee;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  color: #333333;
+  transition: border-color 0.3s ease; /* Transición de color del borde */
+  box-sizing: border-box;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-label {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  font-size: 16px;
+  color: #999999;
+  transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.input-label-active {
+  top: 0px;
+  font-size: 14px;
+  color: #555555;
+}
+
+/* Estilos para el botón de registro */
+.auth-form button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición de color de fondo */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el enlace de cambio de autenticación */
+.auth-form-switch-label {
+  margin-top: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease; /* Transición de color */
+}
+
+.auth-form-switch-label:hover {
+  color: #0056b3;
+}
+
+/* Estilos para hacer el formulario receptivo */
+@media only screen and (max-width: 768px) {
+  .auth-form input {
+    width: 80%;
+  }
+  
+  .auth-form button {
+    width: 80%;
+  }
+}
