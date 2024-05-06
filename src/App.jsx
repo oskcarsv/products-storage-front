@@ -18,18 +18,18 @@ function App() {
 	return (
 		<>
 			<div className='card-to-do'>
-				<h1>Almacenadora</h1>
+				<h1>Products storage</h1>
 				<div className='counter-todos'>
 					<h3>
-						N° Tareas: <span>{todosCount}</span>
+						N° Tasks: <span>{todosCount}</span>
 					</h3>
 					<h3>
-						Pendientes: <span>{pendingTodosCount}</span>
+						Missings: <span>{pendingTodosCount}</span>
 					</h3>
 				</div>
 
 				<div className='add-todo'>
-					<h3>Agregar Tarea</h3>
+					<h3>Add task</h3>
 
 					<TodoAdd handleNewTodo={handleNewTodo} />
 				</div>

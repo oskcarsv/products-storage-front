@@ -33,12 +33,12 @@ export const TodoAdd = ({ handleNewTodo }) => {
 	return (
 		<>
 
-		<link rel="stylesheet" href="./styles/style.css"></link>
+			<link rel="stylesheet" href="./styles/style.css"></link>
 			<form onSubmit={onFormSubmit}>
 
 				<ul>
 					<li>
-						<h4>Tarea:</h4>
+						<h4>Task:</h4>
 						<input
 							type="text"
 							className="input-add"
@@ -49,7 +49,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 						/>
 					</li>
 					<li>
-						<h4>Nombre y apellido:</h4>
+						<h4>Name and Lastname:</h4>
 						<input
 							type="text"
 							className="input-add"
@@ -60,7 +60,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 						/>
 					</li>
 					<li>
-						<h4>Fecha de inicio y cierre:</h4>
+						<h4>End date and start date:</h4>
 						<input
 							type="date"
 							className="input-add"
@@ -82,7 +82,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 					</li>
 
 					<li>
-						<h4>Descripcion:</h4>
+						<h4>Description:</h4>
 						<input
 							type="text"
 							className="input-add"
@@ -95,16 +95,10 @@ export const TodoAdd = ({ handleNewTodo }) => {
 
 					<li>
 						<button className="btn-add" type="submit">
-							Agregar
+							Add
 						</button>
 					</li>
-
-					
-
-
 				</ul>
-
-
 			</form>
 		</>
 	);

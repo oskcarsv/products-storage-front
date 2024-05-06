@@ -10,15 +10,15 @@ export const TodoList = ({
 	return (
 		<ul>
 			<table class="table">
-						<thead>
-							<tr>
-								<th scope="col-8">Tarea</th>
-								<th scope="col">Nombre y apellido</th>
-								<th scope="col">Fecha de inicion y cierre</th>
-								<th scope="col">descripcion</th>
-							</tr>
-						</thead>
-					</table>
+				<thead>
+					<tr>
+						<th scope="col-8">Task</th>
+						<th scope="col">Name and Lastname</th>
+						<th scope="col">End date and start date</th>
+						<th scope="col">Description</th>
+					</tr>
+				</thead>
+			</table>
 			{todos.map(todo => (
 				<TodoItem
 					key={todo.id}
