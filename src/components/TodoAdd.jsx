@@ -67,7 +67,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 							name="startDate"
 							value={startDate}
 							onChange={onInputChange}
-							placeholder="Start date
+							placeholder="Start date"
 						/>
 
 						<input

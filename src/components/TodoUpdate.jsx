@@ -70,7 +70,7 @@ export const TodoUpdate = ({ todo, handleUpdateTodo }) => {
         name="task"
         value={task}
         onChange={onInputChange}
-        placeholder="Nombre de la persona"
+        placeholder="Name of the person"
         readOnly={disabled}
         ref={focusInputRef}
       />
@@ -83,7 +83,7 @@ export const TodoUpdate = ({ todo, handleUpdateTodo }) => {
         name="startD"
         value={startD}
         onChange={onInputChange}
-        placeholder="Fecha de inicio"
+        placeholder="Start date"
         readOnly={disabled}
         ref={focusInputRef}
       />
@@ -96,7 +96,7 @@ export const TodoUpdate = ({ todo, handleUpdateTodo }) => {
         name="finishD"
         value={finishD}
         onChange={onInputChange}
-        placeholder="Fecha de cierre"
+        placeholder="End date"
         readOnly={disabled}
         ref={focusInputRef}
       />
@@ -109,7 +109,7 @@ export const TodoUpdate = ({ todo, handleUpdateTodo }) => {
         name="des"
         value={des}
         onChange={onInputChange}
-        placeholder="Descripcion de la tarea"
+        placeholder="Describe your task"
         readOnly={disabled}
         ref={focusInputRef}
       />
