@@ -103,64 +103,64 @@ export const Register = ({ switchAuthHandler }) => {
     <div className="register-container">
   <form className="auth-form">
     <div className="input-container">
-      <label htmlFor="name" className={formState.name.value ? "input-label input-label-active" : "input-label"}>
-        Name
-      </label>
-      <input
+      <Input
+        field='name'
+        placeholder='Name'
         type="text"
-        id="name"
         value={formState.name.value}
-        onChange={(e) => handleInputValueChange(e.target.value, "name")}
-        onBlur={() => handleInputValidationOnBlur(formState.name.value, "name")}
+        onChangeHandler={handleInputValueChange}
+        onBlurHandler={handleInputValidationOnBlur}
+        showErrorMessage={formState.name.showError}
+        validationMessage={validateNameMessage}
       />
     </div>
     <div className="input-container">
-      <label htmlFor="email" className={formState.email.value ? "input-label input-label-active" : "input-label"}>
-        Email
-      </label>
-      <input
-        type="text"
-        id="email"
-        value={formState.email.value}
-        onChange={(e) => handleInputValueChange(e.target.value, "email")}
-        onBlur={() => handleInputValidationOnBlur(formState.email.value, "email")}
-      />
+      <Input
+          field="email"
+          placeholder='Email'
+          value={formState.email.value}
+          onChangeHandler={handleInputValueChange}
+          type="text"
+          onBlurHandler={handleInputValidationOnBlur}
+          showErrorMessage={formState.email.showError}
+          validationMessage={emailValidationMessage}
+        />
     </div>
     <div className="input-container">
-      <label htmlFor="username" className={formState.username.value ? "input-label input-label-active" : "input-label"}>
-        Username
-      </label>
-      <input
-        type="text"
-        id="username"
-        value={formState.username.value}
-        onChange={(e) => handleInputValueChange(e.target.value, "username")}
-        onBlur={() => handleInputValidationOnBlur(formState.username.value, "username")}
-      />
+      <Input
+          field="username"
+          placeholder='Username'
+          value={formState.username.value}
+          onChangeHandler={handleInputValueChange}
+          type="text"
+          onBlurHandler={handleInputValidationOnBlur}
+          showErrorMessage={formState.username.showError}
+          validationMessage={validateUsernameMessage}
+        />
     </div>
     <div className="input-container">
-      <label htmlFor="password" className={formState.password.value ? "input-label input-label-active" : "input-label"}>
-        Password
-      </label>
-      <input
-        type="password"
-        id="password"
-        value={formState.password.value}
-        onChange={(e) => handleInputValueChange(e.target.value, "password")}
-        onBlur={() => handleInputValidationOnBlur(formState.password.value, "password")}
-      />
+      <Input
+          field="password"
+          placeholder='Password'
+          value={formState.password.value}
+          onChangeHandler={handleInputValueChange}
+          type="password"
+          onBlurHandler={handleInputValidationOnBlur}
+          showErrorMessage={formState.password.showError}
+          validationMessage={validatePasswordMessage}
+        />
     </div>
     <div className="input-container">
-      <label htmlFor="passwordConfirm" className={formState.passwordConfirm.value ? "input-label input-label-active" : "input-label"}>
-        Password Confirmation
-      </label>
-      <input
-        type="password"
-        id="passwordConfirm"
-        value={formState.passwordConfirm.value}
-        onChange={(e) => handleInputValueChange(e.target.value, "passwordConfirm")}
-        onBlur={() => handleInputValidationOnBlur(formState.passwordConfirm.value, "passwordConfirm")}
-      />
+      <Input
+          field="passwordConfirm"
+          placeholder='Password Confirmation'
+          value={formState.passwordConfirm.value}
+          onChangeHandler={handleInputValueChange}
+          type="password"
+          onBlurHandler={handleInputValidationOnBlur}
+          showErrorMessage={formState.passwordConfirm.showError}
+          validationMessage={passwordConfirmationMessage}
+        />
     </div>
     <button
       onClick={handleRegister}

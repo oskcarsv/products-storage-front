@@ -10,6 +10,7 @@ export const Input = ({
     validationMessage,
     onBlurHandler,
     textarea,
+    placeholder
 }) => {
     const handleValueChange = (event) => {
         onChangeHandler(event.target.value, field)
@@ -27,6 +28,7 @@ export const Input = ({
         {textarea ? (
             <textarea
                 type={type}
+                placeholder={placeholder}
                 value={value}
                 onChange={handleValueChange}
                 onBlur={handleInputBlur}
@@ -36,6 +38,7 @@ export const Input = ({
         ) : (
             <input
                 type={type}
+                placeholder={placeholder}
                 value={value}
                 onChange={handleValueChange}
                 onBlur={handleInputBlur}
